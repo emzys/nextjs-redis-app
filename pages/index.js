@@ -1,10 +1,14 @@
-import CarForm from "@/lib/CarForm";
+import CarForm from "../lib/CarForm";
+import SearchForm from "../lib/SearchForm";
 
-export default function Home() {
+export default function Home(props) {
   return (
-    <div>
-      <h1>Create a car</h1>
+    <main>
+      <h1>Create a Car</h1>
       <CarForm />
-    </div>
+      <hr />
+      <h1>Find a Car</h1>
+      <SearchForm />
+    </main>
   );
 }
